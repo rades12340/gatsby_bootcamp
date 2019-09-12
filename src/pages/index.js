@@ -8,10 +8,7 @@ const index = () => (
     <Layout>
       <Head title="Home" />
       <h1>Hello, I'm Radisav</h1>
-      <h4>I'm a full stack developer</h4>
-      <p>
-        Need a developer? <Link to="/contact">Contact me</Link>
-      </p>
+      <h4>I'm a full stack developer based in Serbia</h4>
     </Layout>
   </div>
 )
