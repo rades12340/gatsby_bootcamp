@@ -1,0 +1,36 @@
+.content {
+  margin-bottom: 2rem;
+  text-align: center;
+  p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  h2 {
+    margin: 2rem 0 1rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  ol {
+    width: 750px;
+    margin: auto;
+    list-style: none;
+    text-align: left;
+    counter-reset: my-awesome-counter;
+
+    li {
+      position: relative;
+      left: 45%;
+      counter-increment: my-awesome-counter;
+
+      &::before {
+        content: counter(my-awesome-counter);
+        font-weight: bold;
+        padding-right: 2rem;
+      }
+    }
+  }
+}

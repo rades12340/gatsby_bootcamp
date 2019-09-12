@@ -1,0 +1,15 @@
+$color: rgb(253, 253, 253);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.root {
+  font-family: "Roboto";
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
