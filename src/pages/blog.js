@@ -5,6 +5,7 @@ import Paper from "@material-ui/core/Paper"
 import Typography from "@material-ui/core/Typography"
 import Layout from "../components/layout"
 import Divider from "@material-ui/core/Divider"
+import Head from "../components/head"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -42,6 +43,7 @@ const BlogPage = () => {
   return (
     <div>
       <Layout>
+        <Head title="Blog" />
         {data.allContentfulBlogPost.edges.map(edge => (
           <Link to={`/blog/${edge.node.slug}`} key={edge.node.slug}>
             <Paper className={classes.paper}>

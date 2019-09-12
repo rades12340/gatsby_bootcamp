@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Typography from "@material-ui/core/Typography"
 import blogModule from "./blog.module.scss"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import Head from "../components/head"
 
 export const query = graphql`
   query($slug: String!) {
@@ -29,6 +30,7 @@ const Blog = props => {
   }
   return (
     <Layout>
+      <Head title={props.data.contentfulBlogPost.title} />
       <div className={blogModule.content}>
         <Typography variant="h2">
           {props.data.contentfulBlogPost.title}

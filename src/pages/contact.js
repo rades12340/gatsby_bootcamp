@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
+import Head from "../components/head"
 
 const contact = () => {
   return (
     <div>
       <Layout>
+        <Head title="Contact" />
         <h1>Contact</h1>
         <h4>This is how you can contact me</h4>
         <h4>
